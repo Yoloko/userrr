@@ -20,7 +20,7 @@ const DataArea = () => {
     ]
   });
 
-  const handleSort = heading => {
+  const handleSort = function heading  {
     let currentOrder = developerState.headings
       .filter(elem => elem.name === heading)
       .map(elem => elem.order)
